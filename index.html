@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Basket</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="logo text-primary">World Peas</h1>
+      <nav>
+        <ul class="d-flex list-unstyled gap-3 mb-0">
+          <li><a href="#" class="text-dark">Home</a></li>
+          <li><a href="#" class="text-dark">Shop</a></li>
+          <li><a href="#" class="text-dark">About</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-outline-primary">Basket</button>
+    </div>
+  </header>
+
+  <!-- Basket Section -->
+  <section class="container my-5">
+    <div class="row">
+      <!-- Basket Items -->
+      <div class="col-lg-8">
+        <h2 class="mb-4">Your Basket</h2>
+        <div class="basket-item d-flex align-items-center mb-4">
+          <img src="assets/images/tomato.png" alt="Product" class="img-thumbnail" style="width: 80px; height: 80px;">
+          <div class="ms-3">
+            <h5 class="mb-1">Peas</h5>
+            <p class="mb-0 text-muted">Price: $5/kg</p>
+          </div>
+          <div class="ms-auto">
+            <p class="mb-0">Total: $10</p>
+          </div>
+        </div>
+        <!-- Add more basket items here -->
+      </div>
+
+      <!-- Order Summary -->
+      <div class="col-lg-4">
+        <h2 class="mb-4">Order Summary</h2>
+        <ul class="list-unstyled">
+          <li class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span>$50</span>
+          </li>
+          <li class="d-flex justify-content-between mb-2">
+            <span>Shipping:</span>
+            <span>$5</span>
+          </li>
+          <li class="d-flex justify-content-between mb-2">
+            <span>Tax:</span>
+            <span>$2</span>
+          </li>
+          <li class="d-flex justify-content-between fw-bold border-top pt-2">
+            <span>Total:</span>
+            <span>$57</span>
+          </li>
+        </ul>
+        <button class="btn btn-primary w-100 mt-4">Continue to Payment</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

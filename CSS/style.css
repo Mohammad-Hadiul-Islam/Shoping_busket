@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Logo */
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+  }
+  
+  /* Basket Items */
+  .basket-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  /* Order Summary */
+  #order-summary {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    header .logo {
+      font-size: 1.2rem;
+    }
+  
+    .basket-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
